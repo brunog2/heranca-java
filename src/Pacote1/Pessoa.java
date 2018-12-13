@@ -16,7 +16,7 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String recuperarInformacao() {
+	public String toString() {
 		String retorno = "";
 		retorno += "Nome: "+nome+"\n";
 		retorno += "CPF: "+cpf+"\n";

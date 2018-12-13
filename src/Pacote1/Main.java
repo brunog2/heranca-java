@@ -123,7 +123,7 @@ public class Main {
 				if (opc.equals("1")) {
 					System.out.println("\n---LISTAGEM DE PESSOAS---\n");
 					for (Pessoa pessoa : pessoas) {
-						System.out.println(pessoa.recuperarInformacao());
+						System.out.println(pessoa);
 					}
 				}
 				
@@ -131,7 +131,7 @@ public class Main {
 					System.out.println("\n---LISTAGEM DE FUNCIONÁRIOS---\n");
 					for (Pessoa pessoa : pessoas) {
 						if (pessoa instanceof Funcionario) {
-							System.out.println(pessoa.recuperarInformacao());
+							System.out.println(pessoa);
 						}
 					}
 				}
@@ -140,7 +140,7 @@ public class Main {
 					System.out.println("\n---LISTAGEM DE GERENTES---\n");
 					for (Pessoa pessoa : pessoas) {
 						if (pessoa instanceof Gerente) {
-							System.out.println(pessoa.recuperarInformacao());
+							System.out.println(pessoa);
 						}
 					}
 				}
@@ -149,7 +149,7 @@ public class Main {
 					System.out.println("\n---LISTAGEM DE SUPERVISORES---\n");
 					for (Pessoa pessoa : pessoas) {
 						if (pessoa instanceof Supervisor) {
-							System.out.println(pessoa.recuperarInformacao());
+							System.out.println(pessoa);
 						}
 					}
 				}

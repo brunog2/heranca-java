@@ -11,8 +11,8 @@ public class Supervisor extends Funcionario{
 		this.formacao = formacao;
 	}
 	
-	public String recuperarInformacao() {
-		String retorno = super.recuperarInformacao();
+	public String toString() {
+		String retorno = super.toString();
 		retorno += "Formação: "+formacao+"\n";		
 		return retorno;
 	}

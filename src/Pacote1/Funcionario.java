@@ -16,8 +16,8 @@ public class Funcionario extends Pessoa{
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	public String recuperarInformacao() {
-		String retorno = super.recuperarInformacao();
+	public String toString() {
+		String retorno = super.toString();
 		retorno += "Matrícula: "+matricula+"\n";
 		retorno += "Salário: "+salario+"\n";
 		return retorno;

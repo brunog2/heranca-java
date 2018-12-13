@@ -10,8 +10,8 @@ public class Gerente extends Funcionario{
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	public String recuperarInformacao() {
-		String retorno = super.recuperarInformacao();
+	public String toString() {
+		String retorno = super.toString();
 		retorno += "Tipo: "+tipo+"\n";
 		return retorno;
 	}
