@@ -82,18 +82,22 @@ public class Main {
 				
 				else if (opc1.equals("3")) {
 					System.out.println("\n---Cadastro de supervisor---");
-					System.out.println("Nome: ");
+					System.out.print("Nome: ");
 					String nome = entrada.nextLine();
-					System.out.println("CPF: ");
+					System.out.println();
+					System.out.print("CPF: ");
 					String cpf = entrada.nextLine();
-					System.out.println("Matrícula: ");
+					System.out.println();
+					System.out.print("Matrícula: ");
 					String matricula = entrada.nextLine();
-					System.out.println("Salário: ");
+					System.out.println();
+					System.out.print("Salário: ");
 					double salario = entrada.nextDouble();
 					entrada.nextLine();
+					System.out.println();
 					System.out.println("Formação: ");
 					String formacao = entrada.nextLine();
-					
+					System.out.println();
 					Supervisor supervisor = new Supervisor();
 					supervisor.setNome(nome);
 					supervisor.setCpf(cpf);
@@ -123,7 +127,7 @@ public class Main {
 				if (opc.equals("1")) {
 					System.out.println("\n---LISTAGEM DE PESSOAS---\n");
 					for (Pessoa pessoa : pessoas) {
-						System.out.println(pessoa);
+						System.out.println(pessoa+"\n");
 					}
 				}
 				
@@ -131,7 +135,7 @@ public class Main {
 					System.out.println("\n---LISTAGEM DE FUNCIONÁRIOS---\n");
 					for (Pessoa pessoa : pessoas) {
 						if (pessoa instanceof Funcionario) {
-							System.out.println(pessoa);
+							System.out.println(pessoa+"\n");
 						}
 					}
 				}
@@ -140,7 +144,7 @@ public class Main {
 					System.out.println("\n---LISTAGEM DE GERENTES---\n");
 					for (Pessoa pessoa : pessoas) {
 						if (pessoa instanceof Gerente) {
-							System.out.println(pessoa);
+							System.out.println(pessoa+"\n");
 						}
 					}
 				}
@@ -149,7 +153,7 @@ public class Main {
 					System.out.println("\n---LISTAGEM DE SUPERVISORES---\n");
 					for (Pessoa pessoa : pessoas) {
 						if (pessoa instanceof Supervisor) {
-							System.out.println(pessoa);
+							System.out.println(pessoa+"\n");
 						}
 					}
 				}
